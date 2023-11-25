@@ -62,3 +62,6 @@ dog_application(仮)では、どんな犬種がいるのかについて全く知
   * 犬種の検索時に候補を出してくれる
 * 通知
   * いいねされたら通知してほしい
+
+##　画面遷移図
+figma_url:https://www.figma.com/file/7tf55nXVjqWd7XlB2jAQX2/%E7%84%A1%E9%A1%8C?type=design&node-id=3%3A609&mode=design&t=JYLF7iGQJwj9lIre-1
