@@ -65,3 +65,6 @@ dog_application(仮)では、どんな犬種がいるのかについて全く知
 
 ##　画面遷移図
 figma_url:https://www.figma.com/file/7tf55nXVjqWd7XlB2jAQX2/%E7%84%A1%E9%A1%8C?type=design&node-id=3%3A609&mode=design&t=JYLF7iGQJwj9lIre-1
+
+## ER図
+drawio:https://app.diagrams.net/#G1-IEPgIJQMxr5a0cwg7LNig-jck58PzOW#%7B%22pageId%22%3A%22R2lEEEUBdFMjLlhIrx00%22%7D
