@@ -1,0 +1,18 @@
+current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/racc-1.7.3/ext/racc/cparse
+/Users/yosuketokito/.rbenv/versions/3.0.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240104-73236-fel40j sitelibdir\=./.gem.20240104-73236-fel40j clean
+
+current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240104-73236-fel40j sitelibdir\=./.gem.20240104-73236-fel40j
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240104-73236-fel40j sitelibdir\=./.gem.20240104-73236-fel40j install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20240104-73236-fel40j/racc
+
+current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240104-73236-fel40j sitelibdir\=./.gem.20240104-73236-fel40j clean

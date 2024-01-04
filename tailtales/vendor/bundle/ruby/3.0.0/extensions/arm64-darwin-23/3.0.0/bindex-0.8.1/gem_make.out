@@ -1,0 +1,18 @@
+current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/yosuketokito/.rbenv/versions/3.0.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20240104-73236-eikom7 sitelibdir\=./.gem.20240104-73236-eikom7 clean
+
+current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20240104-73236-eikom7 sitelibdir\=./.gem.20240104-73236-eikom7
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20240104-73236-eikom7 sitelibdir\=./.gem.20240104-73236-eikom7 install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20240104-73236-eikom7/skiptrace/internal
+
+current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20240104-73236-eikom7 sitelibdir\=./.gem.20240104-73236-eikom7 clean
