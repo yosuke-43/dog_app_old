@@ -1,4 +1,4 @@
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/puma-6.4.1/ext/puma_http11
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/puma-6.4.1/ext/puma_http11
 /Users/yosuketokito/.rbenv/versions/3.0.2/bin/ruby extconf.rb
 checking for BIO_read() in -llibcrypto... no
 checking for BIO_read() in -lcrypto... yes
@@ -15,19 +15,19 @@ checking for SSL_get1_peer_certificate() in openssl/ssl.h... no
 checking for Random.bytes... yes
 creating Makefile
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/puma-6.4.1/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20240104-73236-jzu2gm sitelibdir\=./.gem.20240104-73236-jzu2gm clean
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/puma-6.4.1/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20240108-56034-cl8d89 sitelibdir\=./.gem.20240108-56034-cl8d89 clean
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/puma-6.4.1/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20240104-73236-jzu2gm sitelibdir\=./.gem.20240104-73236-jzu2gm
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/puma-6.4.1/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20240108-56034-cl8d89 sitelibdir\=./.gem.20240108-56034-cl8d89
 compiling http11_parser.c
 compiling mini_ssl.c
 compiling puma_http11.c
 linking shared-object puma/puma_http11.bundle
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/puma-6.4.1/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20240104-73236-jzu2gm sitelibdir\=./.gem.20240104-73236-jzu2gm install
-/usr/bin/install -c -m 0755 puma_http11.bundle ./.gem.20240104-73236-jzu2gm/puma
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/puma-6.4.1/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20240108-56034-cl8d89 sitelibdir\=./.gem.20240108-56034-cl8d89 install
+/usr/bin/install -c -m 0755 puma_http11.bundle ./.gem.20240108-56034-cl8d89/puma
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/puma-6.4.1/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20240104-73236-jzu2gm sitelibdir\=./.gem.20240104-73236-jzu2gm clean
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/puma-6.4.1/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20240108-56034-cl8d89 sitelibdir\=./.gem.20240108-56034-cl8d89 clean

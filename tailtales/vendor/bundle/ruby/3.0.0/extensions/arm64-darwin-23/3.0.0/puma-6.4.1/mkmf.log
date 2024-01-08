@@ -404,7 +404,7 @@ checked program was:
 ld: warning: ignoring duplicate libraries: '-lcrypto', '-lssl'
 ld: Undefined symbols:
   _SSL_get1_peer_certificate, referenced from:
-      _t in conftest-318389.o
+      _t in conftest-6fc09e.o
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
 /* begin */

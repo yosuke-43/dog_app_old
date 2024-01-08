@@ -67,5 +67,5 @@ group :test do
   gem "selenium-webdriver"
 end
 
-#gemの追加を行う
-gem 'sassc', '~> 2.0'
+# 以下のgemは独自に追加したgem
+gem 'sass-rails' #scssファイルを読み込み可能にするためのgem

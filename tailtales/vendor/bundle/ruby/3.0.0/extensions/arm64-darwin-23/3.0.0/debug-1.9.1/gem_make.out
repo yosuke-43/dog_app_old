@@ -1,19 +1,19 @@
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/debug-1.9.1/ext/debug
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/debug-1.9.1/ext/debug
 /Users/yosuketokito/.rbenv/versions/3.0.2/bin/ruby extconf.rb
 creating Makefile
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/debug-1.9.1/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20240104-73236-t1uwx9 sitelibdir\=./.gem.20240104-73236-t1uwx9 clean
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/debug-1.9.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240108-56034-qridfc sitelibdir\=./.gem.20240108-56034-qridfc clean
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/debug-1.9.1/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20240104-73236-t1uwx9 sitelibdir\=./.gem.20240104-73236-t1uwx9
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/debug-1.9.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240108-56034-qridfc sitelibdir\=./.gem.20240108-56034-qridfc
 compiling debug.c
 compiling iseq_collector.c
 linking shared-object debug/debug.bundle
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/debug-1.9.1/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20240104-73236-t1uwx9 sitelibdir\=./.gem.20240104-73236-t1uwx9 install
-/usr/bin/install -c -m 0755 debug.bundle ./.gem.20240104-73236-t1uwx9/debug
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/debug-1.9.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240108-56034-qridfc sitelibdir\=./.gem.20240108-56034-qridfc install
+/usr/bin/install -c -m 0755 debug.bundle ./.gem.20240108-56034-qridfc/debug
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/debug-1.9.1/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20240104-73236-t1uwx9 sitelibdir\=./.gem.20240104-73236-t1uwx9 clean
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/debug-1.9.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240108-56034-qridfc sitelibdir\=./.gem.20240108-56034-qridfc clean

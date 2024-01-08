@@ -1,4 +1,4 @@
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/ffi-1.16.3/ext/ffi_c
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/ffi-1.16.3/ext/ffi_c
 /Users/yosuketokito/.rbenv/versions/3.0.2/bin/ruby extconf.rb
 checking for ffi_prep_closure_loc() in -lffi... yes
 checking for ffi_prep_cif_var()... yes
@@ -9,11 +9,11 @@ checking for whether -pthread is accepted as LDFLAGS... yes
 creating extconf.h
 creating Makefile
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/ffi-1.16.3/ext/ffi_c
-make DESTDIR\= sitearchdir\=./.gem.20240106-8923-rcjego sitelibdir\=./.gem.20240106-8923-rcjego clean
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/ffi-1.16.3/ext/ffi_c
+make DESTDIR\= sitearchdir\=./.gem.20240108-61754-k2kgpa sitelibdir\=./.gem.20240108-61754-k2kgpa clean
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/ffi-1.16.3/ext/ffi_c
-make DESTDIR\= sitearchdir\=./.gem.20240106-8923-rcjego sitelibdir\=./.gem.20240106-8923-rcjego
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/ffi-1.16.3/ext/ffi_c
+make DESTDIR\= sitearchdir\=./.gem.20240108-61754-k2kgpa sitelibdir\=./.gem.20240108-61754-k2kgpa
 compiling AbstractMemory.c
 compiling ArrayType.c
 compiling Buffer.c
@@ -40,9 +40,9 @@ compiling ffi.c
 linking shared-object ffi_c.bundle
 ld: warning: ignoring duplicate libraries: '-lffi'
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/ffi-1.16.3/ext/ffi_c
-make DESTDIR\= sitearchdir\=./.gem.20240106-8923-rcjego sitelibdir\=./.gem.20240106-8923-rcjego install
-/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20240106-8923-rcjego
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/ffi-1.16.3/ext/ffi_c
+make DESTDIR\= sitearchdir\=./.gem.20240108-61754-k2kgpa sitelibdir\=./.gem.20240108-61754-k2kgpa install
+/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20240108-61754-k2kgpa
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/ffi-1.16.3/ext/ffi_c
-make DESTDIR\= sitearchdir\=./.gem.20240106-8923-rcjego sitelibdir\=./.gem.20240106-8923-rcjego clean
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/ffi-1.16.3/ext/ffi_c
+make DESTDIR\= sitearchdir\=./.gem.20240108-61754-k2kgpa sitelibdir\=./.gem.20240108-61754-k2kgpa clean
