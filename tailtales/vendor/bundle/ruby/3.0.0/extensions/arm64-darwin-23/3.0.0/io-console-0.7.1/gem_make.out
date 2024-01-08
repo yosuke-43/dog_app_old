@@ -1,4 +1,4 @@
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/io-console-0.7.1/ext/io/console
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/io-console-0.7.1/ext/io/console
 /Users/yosuketokito/.rbenv/versions/3.0.2/bin/ruby extconf.rb
 checking for rb_io_path()... no
 checking for rb_io_descriptor()... no
@@ -12,17 +12,17 @@ checking for HAVE_RUBY_FIBER_SCHEDULER_H... no
 checking for rb_scheduler_timeout()... no
 creating Makefile
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/io-console-0.7.1/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20240104-73236-99tnd4 sitelibdir\=./.gem.20240104-73236-99tnd4 clean
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/io-console-0.7.1/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20240108-56034-sf0bdk sitelibdir\=./.gem.20240108-56034-sf0bdk clean
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/io-console-0.7.1/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20240104-73236-99tnd4 sitelibdir\=./.gem.20240104-73236-99tnd4
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/io-console-0.7.1/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20240108-56034-sf0bdk sitelibdir\=./.gem.20240108-56034-sf0bdk
 compiling console.c
 linking shared-object io/console.bundle
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/io-console-0.7.1/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20240104-73236-99tnd4 sitelibdir\=./.gem.20240104-73236-99tnd4 install
-/usr/bin/install -c -m 0755 console.bundle ./.gem.20240104-73236-99tnd4/io
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/io-console-0.7.1/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20240108-56034-sf0bdk sitelibdir\=./.gem.20240108-56034-sf0bdk install
+/usr/bin/install -c -m 0755 console.bundle ./.gem.20240108-56034-sf0bdk/io
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/io-console-0.7.1/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20240104-73236-99tnd4 sitelibdir\=./.gem.20240104-73236-99tnd4 clean
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/io-console-0.7.1/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20240108-56034-sf0bdk sitelibdir\=./.gem.20240108-56034-sf0bdk clean

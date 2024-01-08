@@ -1,4 +1,4 @@
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/nio4r-2.7.0/ext/nio4r
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/nio4r-2.7.0/ext/nio4r
 /Users/yosuketokito/.rbenv/versions/3.0.2/bin/ruby extconf.rb
 checking for unistd.h... yes
 checking for rb_io_descriptor()... no
@@ -13,11 +13,11 @@ checking for port_event_t in port.h... no
 checking for sys/resource.h... yes
 creating Makefile
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/nio4r-2.7.0/ext/nio4r
-make DESTDIR\= sitearchdir\=./.gem.20240104-73236-v4jvwu sitelibdir\=./.gem.20240104-73236-v4jvwu clean
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/nio4r-2.7.0/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20240108-56034-gv5w61 sitelibdir\=./.gem.20240108-56034-gv5w61 clean
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/nio4r-2.7.0/ext/nio4r
-make DESTDIR\= sitearchdir\=./.gem.20240104-73236-v4jvwu sitelibdir\=./.gem.20240104-73236-v4jvwu
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/nio4r-2.7.0/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20240108-56034-gv5w61 sitelibdir\=./.gem.20240108-56034-gv5w61
 compiling bytebuffer.c
 compiling monitor.c
 compiling nio4r_ext.c
@@ -85,9 +85,9 @@ In file included from nio4r_ext.c:6:
 compiling selector.c
 linking shared-object nio4r_ext.bundle
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/nio4r-2.7.0/ext/nio4r
-make DESTDIR\= sitearchdir\=./.gem.20240104-73236-v4jvwu sitelibdir\=./.gem.20240104-73236-v4jvwu install
-/usr/bin/install -c -m 0755 nio4r_ext.bundle ./.gem.20240104-73236-v4jvwu
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/nio4r-2.7.0/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20240108-56034-gv5w61 sitelibdir\=./.gem.20240108-56034-gv5w61 install
+/usr/bin/install -c -m 0755 nio4r_ext.bundle ./.gem.20240108-56034-gv5w61
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/nio4r-2.7.0/ext/nio4r
-make DESTDIR\= sitearchdir\=./.gem.20240104-73236-v4jvwu sitelibdir\=./.gem.20240104-73236-v4jvwu clean
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/nio4r-2.7.0/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20240108-56034-gv5w61 sitelibdir\=./.gem.20240108-56034-gv5w61 clean

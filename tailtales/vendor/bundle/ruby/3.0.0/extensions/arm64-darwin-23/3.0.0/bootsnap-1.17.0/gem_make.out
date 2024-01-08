@@ -1,12 +1,12 @@
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.17.0/ext/bootsnap
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.17.0/ext/bootsnap
 /Users/yosuketokito/.rbenv/versions/3.0.2/bin/ruby extconf.rb
 creating Makefile
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.17.0/ext/bootsnap
-make DESTDIR\= sitearchdir\=./.gem.20240104-73236-x5cek sitelibdir\=./.gem.20240104-73236-x5cek clean
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.17.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20240108-56034-m6iiv8 sitelibdir\=./.gem.20240108-56034-m6iiv8 clean
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.17.0/ext/bootsnap
-make DESTDIR\= sitearchdir\=./.gem.20240104-73236-x5cek sitelibdir\=./.gem.20240104-73236-x5cek
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.17.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20240108-56034-m6iiv8 sitelibdir\=./.gem.20240108-56034-m6iiv8
 compiling bootsnap.c
 bootsnap.c:822:10: warning: unused variable 'contents' [-Wunused-variable]
   char * contents = NULL;
@@ -14,9 +14,9 @@ bootsnap.c:822:10: warning: unused variable 'contents' [-Wunused-variable]
 1 warning generated.
 linking shared-object bootsnap/bootsnap.bundle
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.17.0/ext/bootsnap
-make DESTDIR\= sitearchdir\=./.gem.20240104-73236-x5cek sitelibdir\=./.gem.20240104-73236-x5cek install
-/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20240104-73236-x5cek/bootsnap
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.17.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20240108-56034-m6iiv8 sitelibdir\=./.gem.20240108-56034-m6iiv8 install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20240108-56034-m6iiv8/bootsnap
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.17.0/ext/bootsnap
-make DESTDIR\= sitearchdir\=./.gem.20240104-73236-x5cek sitelibdir\=./.gem.20240104-73236-x5cek clean
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.17.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20240108-56034-m6iiv8 sitelibdir\=./.gem.20240108-56034-m6iiv8 clean

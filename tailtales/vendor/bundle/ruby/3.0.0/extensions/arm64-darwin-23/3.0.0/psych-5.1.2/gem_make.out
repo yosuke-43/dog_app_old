@@ -1,17 +1,17 @@
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/psych-5.1.2/ext/psych
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/psych-5.1.2/ext/psych
 /Users/yosuketokito/.rbenv/versions/3.0.2/bin/ruby extconf.rb
 checking for yaml.h... yes
 checking for yaml_get_version() in -lyaml... yes
 creating Makefile
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/psych-5.1.2/ext/psych
-make DESTDIR\= sitearchdir\=./.gem.20240104-73236-y7tnjz sitelibdir\=./.gem.20240104-73236-y7tnjz clean
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/psych-5.1.2/ext/psych
+make DESTDIR\= sitearchdir\=./.gem.20240108-56034-90py7j sitelibdir\=./.gem.20240108-56034-90py7j clean
 cd libyaml && /Library/Developer/CommandLineTools/usr/bin/make clean
 /bin/sh: line 0: cd: libyaml: No such file or directory
 make: [clean-so] Error 1 (ignored)
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/psych-5.1.2/ext/psych
-make DESTDIR\= sitearchdir\=./.gem.20240104-73236-y7tnjz sitelibdir\=./.gem.20240104-73236-y7tnjz
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/psych-5.1.2/ext/psych
+make DESTDIR\= sitearchdir\=./.gem.20240108-56034-90py7j sitelibdir\=./.gem.20240108-56034-90py7j
 compiling psych.c
 compiling psych_emitter.c
 compiling psych_parser.c
@@ -20,12 +20,12 @@ compiling psych_yaml_tree.c
 linking shared-object psych.bundle
 ld: warning: ignoring duplicate libraries: '-lyaml'
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/psych-5.1.2/ext/psych
-make DESTDIR\= sitearchdir\=./.gem.20240104-73236-y7tnjz sitelibdir\=./.gem.20240104-73236-y7tnjz install
-/usr/bin/install -c -m 0755 psych.bundle ./.gem.20240104-73236-y7tnjz
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/psych-5.1.2/ext/psych
+make DESTDIR\= sitearchdir\=./.gem.20240108-56034-90py7j sitelibdir\=./.gem.20240108-56034-90py7j install
+/usr/bin/install -c -m 0755 psych.bundle ./.gem.20240108-56034-90py7j
 
-current directory: /Users/yosuketokito/ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/psych-5.1.2/ext/psych
-make DESTDIR\= sitearchdir\=./.gem.20240104-73236-y7tnjz sitelibdir\=./.gem.20240104-73236-y7tnjz clean
+current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/psych-5.1.2/ext/psych
+make DESTDIR\= sitearchdir\=./.gem.20240108-56034-90py7j sitelibdir\=./.gem.20240108-56034-90py7j clean
 cd libyaml && /Library/Developer/CommandLineTools/usr/bin/make clean
 /bin/sh: line 0: cd: libyaml: No such file or directory
 make: [clean-so] Error 1 (ignored)
