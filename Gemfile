@@ -67,5 +67,6 @@ group :test do
   gem "selenium-webdriver"
 end
 
-# 以下のgemは独自に追加したgem
-gem 'sass-rails' #scssファイルを読み込み可能にするためのgem
+#以下は追加したgem
+gem 'bootstrap', '~> 5.0.2'
+gem 'jquery-rails'

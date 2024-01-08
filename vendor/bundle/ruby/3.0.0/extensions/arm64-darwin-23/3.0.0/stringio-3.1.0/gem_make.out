@@ -1,18 +1,18 @@
-current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/stringio-3.1.0/ext/stringio
+current directory: /Users/yosuketokito/ポートフォリオリベンジ/tailtales/vendor/bundle/ruby/3.0.0/gems/stringio-3.1.0/ext/stringio
 /Users/yosuketokito/.rbenv/versions/3.0.2/bin/ruby extconf.rb
 creating Makefile
 
-current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/stringio-3.1.0/ext/stringio
-make DESTDIR\= sitearchdir\=./.gem.20240108-56034-tnc425 sitelibdir\=./.gem.20240108-56034-tnc425 clean
+current directory: /Users/yosuketokito/ポートフォリオリベンジ/tailtales/vendor/bundle/ruby/3.0.0/gems/stringio-3.1.0/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20240108-9724-smn2l9 sitelibdir\=./.gem.20240108-9724-smn2l9 clean
 
-current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/stringio-3.1.0/ext/stringio
-make DESTDIR\= sitearchdir\=./.gem.20240108-56034-tnc425 sitelibdir\=./.gem.20240108-56034-tnc425
+current directory: /Users/yosuketokito/ポートフォリオリベンジ/tailtales/vendor/bundle/ruby/3.0.0/gems/stringio-3.1.0/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20240108-9724-smn2l9 sitelibdir\=./.gem.20240108-9724-smn2l9
 compiling stringio.c
 linking shared-object stringio.bundle
 
-current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/stringio-3.1.0/ext/stringio
-make DESTDIR\= sitearchdir\=./.gem.20240108-56034-tnc425 sitelibdir\=./.gem.20240108-56034-tnc425 install
-/usr/bin/install -c -m 0755 stringio.bundle ./.gem.20240108-56034-tnc425
+current directory: /Users/yosuketokito/ポートフォリオリベンジ/tailtales/vendor/bundle/ruby/3.0.0/gems/stringio-3.1.0/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20240108-9724-smn2l9 sitelibdir\=./.gem.20240108-9724-smn2l9 install
+/usr/bin/install -c -m 0755 stringio.bundle ./.gem.20240108-9724-smn2l9
 
-current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/stringio-3.1.0/ext/stringio
-make DESTDIR\= sitearchdir\=./.gem.20240108-56034-tnc425 sitelibdir\=./.gem.20240108-56034-tnc425 clean
+current directory: /Users/yosuketokito/ポートフォリオリベンジ/tailtales/vendor/bundle/ruby/3.0.0/gems/stringio-3.1.0/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20240108-9724-smn2l9 sitelibdir\=./.gem.20240108-9724-smn2l9 clean

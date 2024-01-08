@@ -1,12 +1,12 @@
-current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/sassc-2.4.0/ext
+current directory: /Users/yosuketokito/ポートフォリオリベンジ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/sassc-2.4.0/ext
 /Users/yosuketokito/.rbenv/versions/3.0.2/bin/ruby extconf.rb
 creating Makefile
 
-current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/sassc-2.4.0/ext
-make DESTDIR\= sitearchdir\=./.gem.20240108-61754-553qt4 sitelibdir\=./.gem.20240108-61754-553qt4 clean
+current directory: /Users/yosuketokito/ポートフォリオリベンジ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/sassc-2.4.0/ext
+make DESTDIR\= sitearchdir\=./.gem.20240108-15702-8l7tmy sitelibdir\=./.gem.20240108-15702-8l7tmy clean
 
-current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/sassc-2.4.0/ext
-make DESTDIR\= sitearchdir\=./.gem.20240108-61754-553qt4 sitelibdir\=./.gem.20240108-61754-553qt4
+current directory: /Users/yosuketokito/ポートフォリオリベンジ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/sassc-2.4.0/ext
+make DESTDIR\= sitearchdir\=./.gem.20240108-15702-8l7tmy sitelibdir\=./.gem.20240108-15702-8l7tmy
 compiling ./libsass/src/ast.cpp
 compiling ./libsass/src/ast2c.cpp
 compiling ./libsass/src/ast_fwd_decl.cpp
@@ -85,9 +85,9 @@ compiling ./libsass/src/util_string.cpp
 compiling ./libsass/src/values.cpp
 linking shared-object sassc/libsass.bundle
 
-current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/sassc-2.4.0/ext
-make DESTDIR\= sitearchdir\=./.gem.20240108-61754-553qt4 sitelibdir\=./.gem.20240108-61754-553qt4 install
-/usr/bin/install -c -m 0755 libsass.bundle ./.gem.20240108-61754-553qt4/sassc
+current directory: /Users/yosuketokito/ポートフォリオリベンジ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/sassc-2.4.0/ext
+make DESTDIR\= sitearchdir\=./.gem.20240108-15702-8l7tmy sitelibdir\=./.gem.20240108-15702-8l7tmy install
+/usr/bin/install -c -m 0755 libsass.bundle ./.gem.20240108-15702-8l7tmy/sassc
 
-current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/sassc-2.4.0/ext
-make DESTDIR\= sitearchdir\=./.gem.20240108-61754-553qt4 sitelibdir\=./.gem.20240108-61754-553qt4 clean
+current directory: /Users/yosuketokito/ポートフォリオリベンジ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/sassc-2.4.0/ext
+make DESTDIR\= sitearchdir\=./.gem.20240108-15702-8l7tmy sitelibdir\=./.gem.20240108-15702-8l7tmy clean
