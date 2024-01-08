@@ -3,6 +3,8 @@
     height: calc(100vh - 134px);
     position: relative;
     background-position: center;
+    background-size: contain; 
+    
   
     .top-inner-text {
       position: absolute;
@@ -12,11 +14,10 @@
       width: 100%;
       text-align: center;
       font-size: 3rem;
-      color: white;
+      color: black;
   
       @media screen and (max-width: 767px) {
         font-size: 2.0rem;
       }
     }
   }
-  

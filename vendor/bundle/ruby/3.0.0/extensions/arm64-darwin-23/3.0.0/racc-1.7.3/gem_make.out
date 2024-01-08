@@ -1,18 +1,18 @@
-current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/racc-1.7.3/ext/racc/cparse
+current directory: /Users/yosuketokito/ポートフォリオリベンジ/tailtales/vendor/bundle/ruby/3.0.0/gems/racc-1.7.3/ext/racc/cparse
 /Users/yosuketokito/.rbenv/versions/3.0.2/bin/ruby extconf.rb
 creating Makefile
 
-current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/racc-1.7.3/ext/racc/cparse
-make DESTDIR\= sitearchdir\=./.gem.20240108-56034-6l7h7g sitelibdir\=./.gem.20240108-56034-6l7h7g clean
+current directory: /Users/yosuketokito/ポートフォリオリベンジ/tailtales/vendor/bundle/ruby/3.0.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240108-9724-u447pa sitelibdir\=./.gem.20240108-9724-u447pa clean
 
-current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/racc-1.7.3/ext/racc/cparse
-make DESTDIR\= sitearchdir\=./.gem.20240108-56034-6l7h7g sitelibdir\=./.gem.20240108-56034-6l7h7g
+current directory: /Users/yosuketokito/ポートフォリオリベンジ/tailtales/vendor/bundle/ruby/3.0.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240108-9724-u447pa sitelibdir\=./.gem.20240108-9724-u447pa
 compiling cparse.c
 linking shared-object racc/cparse.bundle
 
-current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/racc-1.7.3/ext/racc/cparse
-make DESTDIR\= sitearchdir\=./.gem.20240108-56034-6l7h7g sitelibdir\=./.gem.20240108-56034-6l7h7g install
-/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20240108-56034-6l7h7g/racc
+current directory: /Users/yosuketokito/ポートフォリオリベンジ/tailtales/vendor/bundle/ruby/3.0.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240108-9724-u447pa sitelibdir\=./.gem.20240108-9724-u447pa install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20240108-9724-u447pa/racc
 
-current directory: /Users/yosuketokito/renew_ポートフォリオ/dog_app/tailtales/vendor/bundle/ruby/3.0.0/gems/racc-1.7.3/ext/racc/cparse
-make DESTDIR\= sitearchdir\=./.gem.20240108-56034-6l7h7g sitelibdir\=./.gem.20240108-56034-6l7h7g clean
+current directory: /Users/yosuketokito/ポートフォリオリベンジ/tailtales/vendor/bundle/ruby/3.0.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240108-9724-u447pa sitelibdir\=./.gem.20240108-9724-u447pa clean
