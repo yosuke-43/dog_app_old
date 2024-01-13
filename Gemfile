@@ -70,3 +70,4 @@ end
 #以下は追加したgem
 gem 'bootstrap', '~> 5.0.2'
 gem 'jquery-rails'
+gem 'sorcery'
