@@ -10,13 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_01_13_084517) do
+ActiveRecord::Schema[7.1].define(version: 2024_01_14_081025) do
   create_table "answers", force: :cascade do |t|
     t.text "content"
     t.integer "question_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["question_id"], name: "index_answers_on_question_id"
+  end
+
+  create_table "dog_size_types", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "dogs", force: :cascade do |t|
@@ -26,6 +32,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_13_084517) do
     t.string "hair_length"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "dog_size_type_id", null: false
+    t.index ["dog_size_type_id"], name: "index_dogs_on_dog_size_type_id"
   end
 
   create_table "questions", force: :cascade do |t|
@@ -46,4 +54,5 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_13_084517) do
   end
 
   add_foreign_key "answers", "questions"
+  add_foreign_key "dogs", "dog_size_types"
 end
