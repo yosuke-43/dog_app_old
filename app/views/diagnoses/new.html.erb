@@ -1,0 +1,11 @@
+<h1>診断ページ</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      <%= form_with url: diagnoses_index_path, method: :post, local: true do |f| %> 
+        <%= render partial: 'diagnoses/question', collection: @questions, locals: { f: f } %>
+        <%= f.submit '診断結果へ', class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+  </div>
+</div>
