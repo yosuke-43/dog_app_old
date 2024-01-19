@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
+
   root 'static_pages#top'
+  
+  # 診断関係のルーティング
+  get 'diagnoses/new'
+  post 'diagnoses/index'
+  
 
   get 'test', to: 'static_pages#test'
 

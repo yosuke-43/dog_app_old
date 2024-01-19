@@ -1,0 +1,4 @@
+<div class="form-group">
+  <%= "質問#{question.id}.#{question.content}" %>
+  <%= f.collection_select "answers[]", question.answers, :id, :content, { prompt: "回答を選択してください" }, { class: 'form-control' } %>
+</div>

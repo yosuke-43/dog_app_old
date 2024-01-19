@@ -1,0 +1,24 @@
+<h1>診断結果</h1>
+
+<% if @match_dog.present? %>
+  <table>
+    <thead>
+      <tr>
+        <th>Dog ID</th>
+        <th>Breed</th>
+        <th>Match Count</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @match_dog.each do |match_info| %>
+        <tr>
+          <td><%= match_info[:dog_id] %></td>
+          <td><%= match_info[:breed] %></td>
+          <td><%= match_info[:match_count] %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% else %>
+  <p>No matching dogs found.</p>
+<% end %>
