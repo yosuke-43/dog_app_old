@@ -10,7 +10,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <%= link_to 'Home', root_path, class: 'nav-link active', aria: { current: 'page' } %>
+        </li>
+        <li class="nav-item">
+          <%= link_to '犬種一覧', dogs_path, class: 'nav-link active', aria: { current: 'page' } %>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
@@ -19,7 +22,7 @@
           <%= link_to 'ログアウト', logout_path, class: 'nav-link' %>
         </li>
         <li class="nav-item">
-          <%= current_user.decorate.user_san %>
+          <%= link_to "#{current_user.decorate.user_san}", dogs_path, class: 'nav-link active', aria: { current: 'page' } %>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
