@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_01_18_103913) do
+ActiveRecord::Schema[7.1].define(version: 2024_01_21_163605) do
   create_table "answers", force: :cascade do |t|
     t.text "content"
     t.integer "question_id", null: false
@@ -18,6 +18,17 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_18_103913) do
     t.datetime "updated_at", null: false
     t.text "explain"
     t.index ["question_id"], name: "index_answers_on_question_id"
+  end
+
+  create_table "boards", force: :cascade do |t|
+    t.string "title", null: false
+    t.text "body", null: false
+    t.integer "user_id", null: false
+    t.integer "dog_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["dog_id"], name: "index_boards_on_dog_id"
+    t.index ["user_id"], name: "index_boards_on_user_id"
   end
 
   create_table "dog_answer_rerationships", force: :cascade do |t|
@@ -65,6 +76,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_18_103913) do
   end
 
   add_foreign_key "answers", "questions"
+  add_foreign_key "boards", "dogs"
+  add_foreign_key "boards", "users"
   add_foreign_key "dog_answer_rerationships", "answers"
   add_foreign_key "dog_answer_rerationships", "dogs"
   add_foreign_key "dogs", "dog_size_types"
