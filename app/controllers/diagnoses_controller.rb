@@ -1,4 +1,5 @@
 class DiagnosesController < ApplicationController
+  skip_before_action :require_login, only: [:new, :index ]
   def new
     @questions = Question.all.includes(:answers).order(id: :asc)
   end
