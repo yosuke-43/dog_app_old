@@ -1,0 +1,15 @@
+<%= form_with model: board, local: true do |f| %>
+   <div class="form-group">
+     <%= f.label 'タイトル' %>
+     <%= f.text_field :title, class: 'form-control' %>
+   </div>
+   <div class="form-group">
+     <%= f.label "本文" %>
+     <%= f.text_area :body, class: 'form-control', rows: 10 %>
+   </div>
+   <div class="form-group">
+     <%= f.label "どの犬種についての投稿？" %>
+     <%= f.collection_select :dog_id, Dog.all, :id, :breed, { prompt: '犬種を選択してください' }, class: 'form-control' %>
+   </div>
+   <%= f.submit class: 'btn btn-primary' %>
+ <% end %>
