@@ -1,4 +1,5 @@
 class Board < ApplicationRecord
+  mount_uploader :board_image, BoardImageUploader
   #他テーブルとの関係性
   belongs_to :user
   belongs_to :dog
