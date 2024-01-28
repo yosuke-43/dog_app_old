@@ -16,7 +16,9 @@ Rails.application.routes.draw do
   resources :users, only: [:new, :create]
 
   #投稿関係のルーティング
-  resources :boards, only: [:new, :create, :index, :show]
+  resources :boards, only: [:new, :create, :index, :show] do
+    resources :comments, only: %i[create], shallow: true
+  end
 
   # Dog関連のルーティング
   resources :dogs, only: [:show, :index]

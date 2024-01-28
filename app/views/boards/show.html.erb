@@ -25,8 +25,13 @@
   </div>
 
   <!-- コメントフォーム -->
-  <%#= render 'comments/form', { board: @board, comment: @comment } %>
+  <%= render 'comments/form', { board: @board, comment: @comment } %>
 
   <!-- コメントエリア -->
-  <%#= render 'comments/comments', { comments: @comments } %>
+  <%= render 'comments/comments', { comments: @comments } %>
+
+  <%# 投稿一覧に戻るボタンの設置 %>
+  <div class='text-center'>
+    <%= link_to t('.to_board_index'), boards_path %>
+  </div>
 </div>

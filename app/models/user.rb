@@ -9,4 +9,10 @@ class User < ApplicationRecord
 
   #他テーブルとの関係性
   has_many :boards, dependent: :destroy
+  has_many :comments, dependent: :destroy
+
+  #current_userかどうか判定する
+  def own?(object)
+    id == object.user_id
+  end
 end
