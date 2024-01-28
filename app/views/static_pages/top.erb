@@ -1,7 +1,6 @@
 <div class='top-wrapper'>
   <div class='top-inner-text'>
-    <h1>TAIL TALES</h1>
-    
-    <%= link_to "診断へ", diagnoses_new_path, class: "btn btn-primary", role: "button" %>
+    <h1><%= t('.title') %></h1>
+    <%= link_to t('.to_diagnoses'), diagnoses_new_path, class: "btn btn-primary", role: "button" %>
   </div>
 </div>
