@@ -20,7 +20,7 @@
         <% if @boards.present? %>
           <%= render @boards %>
         <% else %>
-          <p><%= "投稿はありません" %></p>
+          <p><%= t('.no_board') %></p>
         <% end %>
       </div>
     </div>
