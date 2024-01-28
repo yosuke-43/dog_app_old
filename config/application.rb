@@ -23,5 +23,11 @@ module Tailtales
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    #i18nに関する記述
+    config.i18n.default_locale = :ja  # デフォルトのlocaleを日本語(:ja)にする
+    config.i18n.load_path += Dir[Rails.root.join('config/locales/**/*.{rb,yml}').to_s] # 左の記述で複数のローケルファイルが読み込まれるようになる(必須)
+    config.time_zone = 'Tokyo'
+    config.active_record.default_timezone = :local
   end
 end
