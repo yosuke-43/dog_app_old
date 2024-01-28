@@ -36,3 +36,8 @@ ja:
   profiles:
     show:
       title: 'プロフィール'
+  dogs:
+    index:
+      title: '犬種一覧'
+    show:
+      title: '犬種詳細'
