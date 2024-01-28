@@ -19,10 +19,15 @@ ja:
   boards:
     index:
       title: '掲示板一覧'
+      no_board: '投稿はありません'
     new:
       title: '掲示板作成'
+      what_breed: '投稿する犬種'
+      what_breed_prompt: '犬種を選択してください'
     bookmarks:
       title: 'ブックマーク一覧'
+    show:
+      title: '掲示板詳細'
   profiles:
     show:
       title: 'プロフィール'
