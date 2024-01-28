@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_01_27_165411) do
+ActiveRecord::Schema[7.1].define(version: 2024_01_28_121200) do
   create_table "answers", force: :cascade do |t|
     t.text "content"
     t.integer "question_id", null: false
@@ -30,6 +30,16 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_27_165411) do
     t.string "board_image"
     t.index ["dog_id"], name: "index_boards_on_dog_id"
     t.index ["user_id"], name: "index_boards_on_user_id"
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.text "body", null: false
+    t.integer "user_id", null: false
+    t.integer "board_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["board_id"], name: "index_comments_on_board_id"
+    t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
   create_table "dog_answer_rerationships", force: :cascade do |t|
@@ -79,6 +89,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_27_165411) do
   add_foreign_key "answers", "questions"
   add_foreign_key "boards", "dogs"
   add_foreign_key "boards", "users"
+  add_foreign_key "comments", "boards"
+  add_foreign_key "comments", "users"
   add_foreign_key "dog_answer_rerationships", "answers"
   add_foreign_key "dog_answer_rerationships", "dogs"
   add_foreign_key "dogs", "dog_size_types"
