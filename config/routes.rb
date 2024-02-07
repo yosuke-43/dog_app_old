@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   resources :users, only: [:new, :create]
 
   #投稿関係のルーティング
-  resources :boards, only: [:new, :create, :index, :show] do
+  resources :boards do
     resources :comments, only: %i[create], shallow: true
   end
 

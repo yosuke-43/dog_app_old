@@ -1,15 +1,15 @@
 <div class="col-sm-12 col-lg-4 mb-3">
   <div id="board-id-<%= board.id %>">
     <div class="card">
-      <%= image_tag board.board_image_url, class: 'card-img-top', size: '300x200' %>
+      <%= image_tag board.board_image_url, class: 'card-img-top', size: '200x200' %>
       <div class="card-body">
         <h4 class="card-title">
-          <%= link_to board.title, board_path(board) %>
+          <%= link_to board.title, board_path(board)  %>
         </h4>
         <h6 class="card-title">
-          <%= link_to board.dog.breed, '#' %>
+          <%= link_to board.dog.breed, dog_path(board.dog) %>
         </h6>
-        <%= render 'crud_menus', board: board %>
+        <%= render 'crud_menus', board: board if current_user.own?(board) %>
         <ul class="list-inline">
           <li class="list-inline-item">
             <%= icon 'far', 'user' %>
