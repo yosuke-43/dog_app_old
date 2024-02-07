@@ -18,3 +18,25 @@ ja:
         board_image: 'サムネイル'
       comment:
         body: 'コメント'
+      dog:
+        hair_length:
+          short_hair: '短毛'
+          medium_hair: '中毛'
+          long_hair: '長毛'
+          short_or_long_hair: '短毛または長毛'
+        activity_level:
+          low_activity_level: '低い'
+          middle_activity_level: '普通'
+          high_activity_level: '高い'
+        solitude_tolerance:
+          low_solitude_tolerance: '低い'
+          middle_solitude_tolerance: '普通'
+          high_solitude_tolerance: '高い'
+        care_difficulty:
+          easy_care_difficulty: '簡単'
+          middle_care_difficulty: '普通'
+          difficult_care_difficulty: '難しい'
+        features_sentence: "特徴"
+        personality_sentence: "性格"
+        history_sentence: "歴史"
+        recommended_for_whom: "どんな人におすすめ？"

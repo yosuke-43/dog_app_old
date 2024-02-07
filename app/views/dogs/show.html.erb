@@ -1,3 +1,112 @@
 <% content_for(:title, t('.title')) %>
-<h1>Dogs#show</h1>
-<p>Find me in app/views/dogs/show.html.erb</p>
+
+<div class="container px-4 py-5">
+<h2 class="pb-2 border-bottom"><%= @dog.breed %></h2>
+  <div class="row align-items-md-center g-5 py-5">
+    <!-- 画像を左側に配置 -->
+
+    <div class="col-md-6">
+      <%= image_tag @dog.dog_image.url, class: 'card-img-top', size: '300x300' %>
+      <div class="mt-3 mb-3">
+        <%= link_to t('.to_board', item: @dog.breed), "#", class: 'btn btn-primary btn-lg px-4' %>
+      </div>
+    </div>
+
+
+    <!-- テキスト情報を右側に配置 -->
+    <div class="col-md-6">
+      <div class="row row-cols-2 g-4">
+        <!-- アイコンとテキスト要素1 -->
+        <div class="col d-flex align-items-start">
+          <i class="fas fa-solid fa-dog text-body-secondary flex-shrink-0 me-3" style="font-size: 1.5em;"></i>
+          <div>
+            <h3 class="fw-bold mb-0 fs-5 text-body-emphasis" style="font-size: 1.2em;"><%= t('.size') %></h3>
+            <p style="font-size: 1.3em;"><%= @dog.dog_size_type.name %></p>
+          </div>
+        </div>
+
+
+      <div class="col d-flex align-items-start">
+        <i class="fas fa-solid fa-earth-americas text-body-secondary flex-shrink-0 me-3" style="font-size: 1.5em;"></i>
+        <div>
+          <h3 class="fw-bold mb-0 fs-5 text-body-emphasis" style="font-size: 1.2em;"><%= t('.country') %></h3>
+          <p style="font-size: 1.3em;"><%= @dog.dog_country.name %></p>
+        </div>
+      </div>
+
+      <div class="col d-flex align-items-start">
+        <i class="fas fa-solid fa-up-down text-body-secondary flex-shrink-0 me-3" style="font-size: 1.5em;"></i>
+        <div>
+          <h3 class="fw-bold mb-0 fs-5 text-body-emphasis" style="font-size: 1.2em;"><%= t('.height') %></h3>
+          <p style="font-size: 1.3em;"><%= @dog.height %></p>
+        </div>
+      </div>
+
+      <div class="col d-flex align-items-start">
+        <i class="fas fa-solid fa-weight-scale text-body-secondary flex-shrink-0 me-3" style="font-size: 1.5em;"></i>
+        <div>
+          <h3 class="fw-bold mb-0 fs-5 text-body-emphasis" style="font-size: 1.2em;"><%= t('.weight') %></h3>
+          <p style="font-size: 1.3em;"><%= @dog.weight %></p>
+        </div>
+      </div>
+
+      <div class="col d-flex align-items-start">
+        <i class="fas fa-solid fa-ruler text-body-secondary flex-shrink-0 me-3" style="font-size: 1.5em;"></i>
+        <div>
+          <h3 class="fw-bold mb-0 fs-5 text-body-emphasis" style="font-size: 1.2em;"><%= t('.hair_length') %></h3>
+          <p style="font-size: 1.3em;"><%= I18n.t("activerecord.attributes.dog.hair_length.#{@dog.hair_length}") %></p>
+        </div>
+      </div>
+
+      <div class="col d-flex align-items-start">
+        <i class="fas fa-solid fa-dumbbell fa-paw text-body-secondary flex-shrink-0 me-3" style="font-size: 1.5em;"></i>
+        <div>
+          <h3 class="fw-bold mb-0 fs-5 text-body-emphasis" style="font-size: 1.2em;"><%= t('.activity_level') %></h3>
+          <p style="font-size: 1.3em;"><%= I18n.t("activerecord.attributes.dog.activity_level.#{@dog.activity_level}") %></p>
+        </div>
+      </div>
+
+      <div class="col d-flex align-items-start">
+        <i class="fas fa-solid fa-house fa-face-smile-wink text-body-secondary flex-shrink-0 me-3" style="font-size: 1.5em;"></i>
+        <div>
+          <h3 class="fw-bold mb-0 fs-5 text-body-emphasis" style="font-size: 1.2em;"><%= t('.solitude_tolerance') %></h3>
+          <p style="font-size: 1.3em;"><%= I18n.t("activerecord.attributes.dog.solitude_tolerance.#{@dog.solitude_tolerance}") %></p>
+        </div>
+      </div>
+
+      <div class="col d-flex align-items-start">
+        <i class="fas fa-solid fa-hand-holding-hand text-body-secondary flex-shrink-0 me-3" style="font-size: 1.5em;"></i>
+        <div>
+          <h3 class="fw-bold mb-0 fs-5 text-body-emphasis" style="font-size: 1.2em;"><%= t('.care_difficulty') %></h3>
+          <p style="font-size: 1.3em;"><%= I18n.t("activerecord.attributes.dog.care_difficulty.#{@dog.care_difficulty}") %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="pb-2 border-bottom">犬種情報</h2>
+    
+    <div class="row g-3">
+
+      <div class="col-md-6">
+        <h2 class="text-body-emphasis"><i class="fa-solid fa-book"></i> <%= t("activerecord.attributes.dog.features_sentence") %></h2>
+        <p><%= @dog.features_sentence %></p>
+      </div>
+
+      <div class="col-md-6">
+        <h2 class="text-body-emphasis"><i class="fa-solid fa-book"></i> <%= t("activerecord.attributes.dog.personality_sentence") %></h2>
+        <p><%= @dog.personality_sentence %></p>
+      </div>
+
+      <div class="col-md-6">
+        <h2 class="text-body-emphasis"><i class="fa-solid fa-book"></i> <%= t("activerecord.attributes.dog.history_sentence") %></h2>
+        <p><%= @dog.history_sentence %></p>
+      </div>
+
+      <div class="col-md-6">
+        <h2 class="text-body-emphasis"><i class="fa-solid fa-book"></i> <%= t("activerecord.attributes.dog.recommended_for_whom") %></h2>
+        <p><%= @dog.recommended_for_whom %></p>
+      </div>
+
+    </div>
+</div>
