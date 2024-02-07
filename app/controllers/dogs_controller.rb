@@ -5,5 +5,7 @@ class DogsController < ApplicationController
   end
 
   def show
+    
+    @dog = Dog.includes(:dog_size_type, :dog_country).find(params[:id])
   end
 end

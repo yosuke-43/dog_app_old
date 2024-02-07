@@ -41,3 +41,13 @@ ja:
       title: '犬種一覧'
     show:
       title: '犬種詳細'
+      size: "サイズ"
+      country: "原産国"
+      height: "体高"
+      weight: "体重"
+      hair_length: "毛の長さ"
+      activity_level: "運動量"
+      solitude_tolerance: "留守番耐性"
+      care_difficulty: "飼育難易度"
+      to_board: "%{item}の投稿はこちらから"
+

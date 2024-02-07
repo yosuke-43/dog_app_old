@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_01_28_121200) do
+ActiveRecord::Schema[7.1].define(version: 2024_02_07_071950) do
   create_table "answers", force: :cascade do |t|
     t.text "content"
     t.integer "question_id", null: false
@@ -52,6 +52,12 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_28_121200) do
     t.index ["dog_id"], name: "index_dog_answer_rerationships_on_dog_id"
   end
 
+  create_table "dog_countries", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "dog_size_types", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -62,10 +68,21 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_28_121200) do
     t.string "breed", null: false
     t.string "height"
     t.string "weight"
-    t.string "hair_length"
+    t.integer "hair_length"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "dog_size_type_id", null: false
+    t.string "dog_image"
+    t.integer "dog_country_id"
+    t.integer "activity_level"
+    t.integer "solitude_tolerance"
+    t.integer "care_difficulty"
+    t.text "catchphrase"
+    t.text "features_sentence"
+    t.text "personality_sentence"
+    t.text "history_sentence"
+    t.text "recommended_for_whom"
+    t.index ["dog_country_id"], name: "index_dogs_on_dog_country_id"
     t.index ["dog_size_type_id"], name: "index_dogs_on_dog_size_type_id"
   end
 
@@ -93,5 +110,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_28_121200) do
   add_foreign_key "comments", "users"
   add_foreign_key "dog_answer_rerationships", "answers"
   add_foreign_key "dog_answer_rerationships", "dogs"
+  add_foreign_key "dogs", "dog_countries"
   add_foreign_key "dogs", "dog_size_types"
 end
