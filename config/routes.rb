@@ -17,7 +17,7 @@ Rails.application.routes.draw do
 
   #投稿関係のルーティング
   resources :boards do
-    resources :comments, only: %i[create], shallow: true
+    resources :comments, only: %i[create destroy], shallow: true
   end
 
   # Dog関連のルーティング

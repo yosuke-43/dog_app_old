@@ -11,6 +11,7 @@ ja:
       not_updated: "%{item}を更新できませんでした"
       deleted: "%{item}を削除しました"
       delete_confirm: "削除しますか？"
+      
   static_pages:
     top:
       title: 'TAIL TALES'
@@ -39,6 +40,9 @@ ja:
       to_board_index: '掲示板一覧へ'
     edit:
       title: '掲示板編集'
+  comments:
+      form:
+        comment_delete: 'コメント削除'
   profiles:
     show:
       title: 'プロフィール'
