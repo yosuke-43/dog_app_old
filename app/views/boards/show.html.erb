@@ -15,7 +15,7 @@
               <%= render 'crud_menus', board: @board if current_user.own?(@board) %>
               <ul class="list-inline">
                 <li class="list-inline-item">by <%= @board.user.decorate.user_san %></li>
-                <li class="list-inline-item"><%= l @board.created_at, format: :long  %></li>
+                <li class="list-inline-item"><%= t('activerecord.attributes.board.created_at') %>：<%= l @board.created_at, format: :long  %></li>
               </ul>
             </div>
           </div>

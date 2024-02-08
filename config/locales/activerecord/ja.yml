@@ -16,8 +16,10 @@ ja:
         title: 'タイトル'
         body: '本文'
         board_image: 'サムネイル'
+        created_at: '投稿日時'
       comment:
         body: 'コメント'
+        created_at: 'コメント投稿日時'
       dog:
         hair_length:
           short_hair: '短毛'

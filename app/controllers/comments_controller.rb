@@ -1,12 +1,25 @@
 class CommentsController < ApplicationController
 
     def create
-        comment = current_user.comments.build(comment_params)
-        if comment.save
-            redirect_to board_path(comment.board), success: t('defaults.message.created', item: Comment.model_name.human )
-        else
-            redirect_to board_path(comment.board), danger: t('defaults.message.not_created', item: Comment.model_name.human )
+        @comment = current_user.comments.build(comment_params)
+        @board = Board.find(params[:board_id])  # コメントが属する掲示板を取得
+      
+        respond_to do |format|
+          if @comment.save
+            format.html { redirect_to @board, notice: 'Comment was successfully created.' }
+            format.json { render :show, status: :created, location: @comment }
+            format.js   # ここで JS フォーマットを指定
+          else
+            format.html { render 'boards/show', locals: { board: @board } }  # エラー時の処理
+            format.json { render json: @comment.errors, status: :unprocessable_entity }
+            format.js   # エラー時も JS フォーマットを指定
+          end
         end
+      end      
+
+    def destroy
+        @comment = current_user.comments.find(params[:id])
+        @comment.destroy!
     end
 
     private

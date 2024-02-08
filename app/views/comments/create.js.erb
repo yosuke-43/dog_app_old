@@ -1,0 +1,10 @@
+<%# すでにエラー文が表示されていたら、一旦削除する %>
+$("#error_messages").remove()
+<% if @comment.errors.present? %>
+  <%# // エラー時の処理 %>
+  $("#new_comment").prepend("<%= j(render('shared/error_messages', object: @comment)) %>");
+<% else %>
+  <%# // 正常時の処理 %>
+  $("#js-table-comment").prepend("<%= j(render('comments/comment', comment: @comment)) %>");
+  $("#js-new-comment-body").val('');
+<% end %>
