@@ -1,4 +1,5 @@
 <div class="form-group">
   <%= "質問#{question.id}.#{question.content}" %>
+  <%# answesというname属性の配列に回答を格納する %>
   <%= f.collection_select "answers[]", question.answers, :id, :content, { prompt: "回答を選択してください" }, { class: 'form-control' } %>
 </div>
