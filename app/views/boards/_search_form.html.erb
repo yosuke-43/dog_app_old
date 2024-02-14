@@ -1,0 +1,9 @@
+<%= search_form_for @q, url: url do |f| %>
+  <div class="input-group mb-3">
+    <%= f.select :dog_breed_eq, @dog_breeds, { include_blank: t('defaults.message.select_dog_breed') }, class: "form-control" %>
+    <%= f.search_field :title_or_body_cont, class: "form-control", placeholder: t('defaults.message.search_word') %>
+    <div class="input-group-append">
+      <input type="submit" value="検索" class="btn btn-primary" />
+    </div>
+  </div>
+<% end %>

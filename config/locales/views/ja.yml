@@ -11,7 +11,8 @@ ja:
       not_updated: "%{item}を更新できませんでした"
       deleted: "%{item}を削除しました"
       delete_confirm: "削除しますか？"
-      
+      search_word: 'タイトル or 本文を入力してください'
+      select_dog_breed: '犬種を選択してください'
   static_pages:
     top:
       title: 'TAIL TALES'

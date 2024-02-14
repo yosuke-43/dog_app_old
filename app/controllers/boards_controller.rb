@@ -17,7 +17,9 @@ class BoardsController < ApplicationController
   end
 
   def index
-    @boards = Board.all.includes(:user, :dog).order(created_at: :desc)
+    @dog_breeds = Dog.pluck(:breed).uniq #pluckで:breedのカラムの値のみを配列で取得、重複はないけどuniqで取得。
+    @q = Board.ransack(params[:q]) #ransackメソッドは、送られてきたパラメーターを元にテーブルからデータを検索するメソッドです。(whereメソッドのransack版というイメージです。)
+    @boards = @q.result(distinct: true).includes(:user, :dog).order(created_at: :desc) #ransackメソッドで取得したデータをActiveRecord_Relationのオブジェクトに変換するメソッドです。
   end
 
   def show
