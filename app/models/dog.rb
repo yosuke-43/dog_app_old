@@ -19,4 +19,11 @@ class Dog < ApplicationRecord
     
     #attr_accessor(一時的なカラム、DB保存なし)の設定
     attr_accessor :temp_count
+
+    #ransackの検索機能を使うために下記のメソッドを追加、どの属性や関連を検索可能とするかを指定する
+    #特にこれは属性に関しての記述
+    def self.ransackable_attributes(auth_object = nil)
+        ["activity_level", "breed", "care_difficulty", "catchphrase", "created_at", "dog_country_id", "dog_image", "dog_size_type_id", "features_sentence", "hair_length", "height", "history_sentence", "id", "id_value", "personality_sentence", "recommended_for_whom", "solitude_tolerance", "updated_at", "weight"]
+    end
+    
 end
