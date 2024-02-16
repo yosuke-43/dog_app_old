@@ -3,4 +3,6 @@ class StaticPagesController < ApplicationController
     def top; end
 
     def test; end
+
+    def top_merge; end
 end

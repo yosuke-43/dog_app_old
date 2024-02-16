@@ -1,6 +1,15 @@
-<footer class="py-5 text-center text-body-secondary bg-body-tertiary">
-  <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-  <p class="mb-0">
-    <a href="#">Back to top</a>
-  </p>
-</footer>
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 Company, Inc</p>
+    <ul class="nav col-md-4 nav-center">
+      <i class="fa-solid fa-chevron-up"></i>
+      <li><a href="#" class="px-2 text-body-secondary up_to_top">一番上まで</a></li>
+      <i class="fa-solid fa-chevron-up"></i>
+    </ul>
+    <ul class="nav col-md-4 justify-content-end">
+      <li><%= link_to "お問い合わせ", "#", class: "px-2 text-body-secondary" %></li>
+      <li><%= link_to "利用規約", "#", class: "px-2 text-body-secondary" %></li>
+      <li><%= link_to "プライバシーポリシー", "#", class: "px-2 text-body-secondary" %></li>
+    </ul>
+  </footer>
+</div>

@@ -3,38 +3,23 @@
     <a class='navbar-brand' href='/'>
       <%= image_tag 'logo.png', size: '80x80' %>
     </a>
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <%= link_to 'Home', root_path, class: 'nav-link active', aria: { current: 'page' } %>
+          <%= link_to 'Home', root_path, class: 'nav-link' %>
         </li>
         <li class="nav-item">
-          <%= link_to '犬種一覧', dogs_path, class: 'nav-link active', aria: { current: 'page' } %>
+          <%= link_to 'マージしたTOP', merge_path, class: 'nav-link' %>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <%= link_to '犬種一覧', dogs_path, class: 'nav-link' %>
         </li>
         <li class="nav-item">
           <%= link_to 'ログアウト', logout_path, class: 'nav-link' %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "#{current_user.decorate.user_san}", dogs_path, class: 'nav-link active', aria: { current: 'page' } %>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <%= link_to 'test', '#', class: 'dropdown-item' %>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,18 +29,9 @@
             <li><a class="dropdown-item" href="#"></a></li>
             <%= link_to '投稿一覧', boards_path, class: 'dropdown-item' %>
             <%= link_to '投稿作成', new_board_path, class: 'dropdown-item' %>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>
