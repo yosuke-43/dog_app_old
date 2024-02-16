@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   # topページとテストのルーティング
   root 'static_pages#top'
   get 'test', to: 'static_pages#test'
+  get 'merge', to: 'static_pages#top_merge'
 
   # 診断関係のルーティング
   get 'diagnoses/new'

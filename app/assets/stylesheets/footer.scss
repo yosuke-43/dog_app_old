@@ -1,0 +1,20 @@
+.up_to_top {
+  color: rgba(33, 37, 41, 0.75);
+}
+.up_to_top:hover {
+  color: rgba(33, 37, 41, 0.75); /* ホバー時の文字色をブラックに変更 */
+}
+.nav-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.d-flex {
+  display: flex;
+}
+footer {
+  width: 100%; /* 横幅を100%に設定 */
+}
+.navbar {
+  width: 100%; /* 横幅を100%に設定 */
+}
