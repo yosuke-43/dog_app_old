@@ -1,0 +1,16 @@
+.question-container {
+    margin-bottom: 25px; /* 任意の間隔を設定 */
+  }
+
+.question-text {
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.diagnoses-container {
+    background-image: url('/assets/question-cover.jpg'); /* 画像のパスに注意 */
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;   
+}
