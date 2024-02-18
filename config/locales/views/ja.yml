@@ -61,4 +61,6 @@ ja:
       solitude_tolerance: "留守番耐性"
       care_difficulty: "飼育難易度"
       to_board: "%{item}の投稿はこちらから"
-
+  diagnoses:
+    index:
+      no_match: 'マッチする犬種はいません'
