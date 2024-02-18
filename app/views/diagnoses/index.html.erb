@@ -3,5 +3,5 @@
 <% if @recommend_dogs.present? %>
   <%= render partial: "recommend_dog", collection: @recommend_dogs %>
 <% else %>
-  <p>No matching dogs found.</p>
+  <p><%= t('.no_match') %></p>
 <% end %>
