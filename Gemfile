@@ -83,3 +83,4 @@ gem 'ransack'
 gem "dockerfile-rails", ">= 1.6", :group => :development
 
 gem 'pg', '~> 1.5.5'
+gem 'uri', '0.10.1'
