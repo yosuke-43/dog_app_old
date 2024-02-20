@@ -20,6 +20,17 @@ test:
   <<: *default
   database: db/test.sqlite3
 
+# 以前の本番用のデータベースの情報は下記だが、デプロイ後に変更した。
+# production:
+#   <<: *default
+#   database: db/production.sqlite3
+
 production:
-  <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  database: dog-app-db  # データベース名を指定
+  username: postgres  # ユーザー名を指定
+  password: ENV['SECRET_KEY']  # パスワードを指定
+  host: dog-app-db.internal  # ホスト名を指定
+  port: 5432  # ポート番号を指定
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>

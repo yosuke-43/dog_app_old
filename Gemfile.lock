@@ -118,6 +118,10 @@ GEM
     date (3.3.4)
     dockerfile-rails (1.6.5)
       rails (>= 3.0.0)
+    dotenv (3.0.2)
+    dotenv-rails (3.0.2)
+      dotenv (= 3.0.2)
+      railties (>= 6.1)
     draper (4.0.2)
       actionpack (>= 5.0)
       activemodel (>= 5.0)
@@ -360,6 +364,7 @@ DEPENDENCIES
   capybara
   carrierwave
   dockerfile-rails (>= 1.6)
+  dotenv-rails
   draper
   faker
   font-awesome-sass
