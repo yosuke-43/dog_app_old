@@ -9,7 +9,8 @@ gem "rails", "~> 7.1.1"
 gem "sprockets-rails"
 
 # Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
+# ネストしていないと本番環境でもsqlite3が利用されてしまうから、コメントアウトする
+# gem "sqlite3", "~> 1.4"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
@@ -48,6 +49,8 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   #　デプロイのためにこれも消す。 gem "debug", platforms: %i[ mri windows ]
+  gem 'pry-byebug'
+  gem "sqlite3", "~> 1.4"
 end
 
 group :development do
@@ -68,11 +71,18 @@ group :test do
   gem "selenium-webdriver"
 end
 
+# 本番環境用のgemグループを新しく作成しPostgresを指定
+group :production do
+  gem 'pg', '~> 1.5.5'
+  gem 'uri', '0.10.1'
+  gem 'dotenv-rails'
+end
+
+
 #以下は追加したgem
 gem 'bootstrap', '~> 5.0.2'
 gem 'jquery-rails'
 gem 'sorcery'
-gem 'pry-byebug'
 gem 'draper'
 gem 'font-awesome-sass'
 gem 'faker'
@@ -82,6 +92,3 @@ gem 'ransack'
 
 gem "dockerfile-rails", ">= 1.6", :group => :development
 
-gem 'pg', '~> 1.5.5'
-gem 'uri', '0.10.1'
-gem 'dotenv-rails'
