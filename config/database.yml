@@ -20,6 +20,12 @@ test:
   <<: *default
   database: db/test.sqlite3
 
+# 以前の本番用のデータベースの情報は下記だが、デプロイ後に変更した。
+# production:
+#   <<: *default
+#   database: db/production.sqlite3
+
 production:
-  <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
