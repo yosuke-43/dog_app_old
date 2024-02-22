@@ -76,6 +76,7 @@ group :production do
   gem 'pg', '~> 1.5.5'
   gem 'uri', '0.10.1'
   gem 'dotenv-rails'
+  gem 'fog-aws'
 end
 
 
@@ -89,6 +90,6 @@ gem 'faker'
 gem 'carrierwave'
 gem 'rails-i18n'
 gem 'ransack'
-
 gem "dockerfile-rails", ">= 1.6", :group => :development
+
 
