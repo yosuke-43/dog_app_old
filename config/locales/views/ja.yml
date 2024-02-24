@@ -13,6 +13,7 @@ ja:
       delete_confirm: "削除しますか？"
       search_word: 'タイトル or 本文を入力してください'
       select_dog_breed: '犬種を選択してください'
+      to_post: '投稿する'
   static_pages:
     top:
       title: 'TAIL TALES'
@@ -24,16 +25,17 @@ ja:
   user_sessions:
     new:
       title: 'ログイン'
-      to_register_page: '登録ページへ'
+      to_register_page: '新規登録はこちら'
       password_forget: 'パスワードをお忘れの方はこちら'
   boards:
     index:
       title: '掲示板一覧'
       no_board: '投稿はありません'
     new:
-      title: '掲示板作成'
+      title: '投稿作成'
       what_breed: '投稿する犬種'
       what_breed_prompt: '犬種を選択してください'
+      post: '投稿する'
     bookmarks:
       title: 'ブックマーク一覧'
     show:

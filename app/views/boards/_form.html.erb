@@ -20,5 +20,5 @@
 	  <%# 以下はプレビュー画面を表示するコード %>
     <%= image_tag board.board_image.url, id: 'preview', size: '300x200' %>
   </div>
-   <%= f.submit class: 'btn btn-primary' %>
+   <%= f.submit t('defaults.message.to_post'), class: 'btn btn-primary' %>
  <% end %>

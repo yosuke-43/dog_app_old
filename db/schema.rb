@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_02_22_033337) do
+ActiveRecord::Schema[7.1].define(version: 2024_02_24_130900) do
   create_table "answers", force: :cascade do |t|
     t.text "content"
     t.integer "question_id", null: false
@@ -82,6 +82,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_22_033337) do
     t.text "personality_sentence"
     t.text "history_sentence"
     t.text "recommended_for_whom"
+    t.integer "display_in_index", default: 0
     t.index ["dog_country_id"], name: "index_dogs_on_dog_country_id"
     t.index ["dog_size_type_id"], name: "index_dogs_on_dog_size_type_id"
   end
