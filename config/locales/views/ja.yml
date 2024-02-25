@@ -13,6 +13,7 @@ ja:
       delete_confirm: "削除しますか？"
       search_word: 'タイトル or 本文を入力してください'
       select_dog_breed: '犬種を選択してください'
+      search_breed: '犬種名を入力してください'
       to_post: '投稿する'
   static_pages:
     top:
@@ -52,6 +53,7 @@ ja:
   dogs:
     index:
       title: '犬種一覧'
+      no_result: '見つかりませんでした'
     show:
       title: '犬種詳細'
       size: "サイズ"
