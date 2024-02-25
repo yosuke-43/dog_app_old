@@ -3,8 +3,9 @@ class DogsController < ApplicationController
 
   def index
     @displayed_dogs = Dog.where(display_in_index: 1)
+    @displayed_dogs_pulldown = @displayed_dogs.order(breed: :asc).pluck(:breed).uniq
     @q = @displayed_dogs.ransack(params[:q])
-    @dogs = @q.result(distinct: true).includes(:dog_size_type, :dog_country).order(created_at: :asc) 
+    @dogs = @q.result(distinct: true).includes(:dog_size_type, :dog_country).order(breed: :asc) 
   end
 
   def show

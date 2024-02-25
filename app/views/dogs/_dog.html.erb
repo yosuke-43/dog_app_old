@@ -1,10 +1,15 @@
-<div class="col-sm-12 col-lg-4 mb-3">
+<div class="col-sm-12 col-md-6 col-lg-3 mb-3">
   <div id="dog-id-<%= dog.id %>">
     <div class="card">
-      <%= image_tag "dog_image/#{dog.id}.jpeg", class: 'card-img-top', size: '300x300' %>
+      <%= link_to dog_path(dog) do %>
+        <%= image_tag "dog_image/#{dog.id}.jpeg", class: 'card-img-top', size: '200x200' %>
+      <% end %>
       <div class="card-body">
-        <h4 class="card-title">
+        <h4 class="card-title" style="font-size: 14px;">
           <%= link_to dog.breed, dog_path(dog) %>
+        </h4>
+        <h4 class="card-title" style="font-size: 14px;">
+          <%= "#{dog.dog_size_type.name}" %>
         </h4>
       </div>
     </div>

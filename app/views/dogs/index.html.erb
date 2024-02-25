@@ -8,7 +8,7 @@
       <% end %>
       <%= search_form_for @q, url: dogs_path do |f| %>
         <div class="input-group mb-3">
-          <%= f.search_field :breed_cont, class: "form-control", placeholder: t('defaults.message.search_breed') %>
+          <%= f.select :breed_cont, options_for_select(@displayed_dogs_pulldown, @q.breed_cont), { include_blank: t('defaults.message.select_dog_breed'), class: 'form-control' } %>
           <div class="input-group-append">
             <input type="submit" value="検索" class="btn btn-primary" />
           </div>
