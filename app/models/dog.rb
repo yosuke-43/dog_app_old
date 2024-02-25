@@ -23,7 +23,7 @@ class Dog < ApplicationRecord
     #ransackの検索機能を使うために下記のメソッドを追加、どの属性や関連を検索可能とするかを指定する
     #特にこれは属性に関しての記述
     def self.ransackable_attributes(auth_object = nil)
-        ["activity_level", "breed", "care_difficulty", "catchphrase", "created_at", "dog_country_id", "dog_image", "dog_size_type_id", "features_sentence", "hair_length", "height", "history_sentence", "id", "id_value", "personality_sentence", "recommended_for_whom", "solitude_tolerance", "updated_at", "weight"]
+        ["name", "activity_level", "breed", "care_difficulty", "catchphrase", "created_at", "dog_country_id", "dog_image", "dog_size_type_id", "features_sentence", "hair_length", "height", "history_sentence", "id", "id_value", "personality_sentence", "recommended_for_whom", "solitude_tolerance", "updated_at", "weight", "display_in_index"]
     end
     
 end

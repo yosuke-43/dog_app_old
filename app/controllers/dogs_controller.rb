@@ -1,7 +1,10 @@
 class DogsController < ApplicationController
   skip_before_action :require_login, only: [:index, :show]
+
   def index
-    @dogs = Dog.where(display_in_index: 1).includes(:dog_size_type).order(dog_size_type_id: :asc)
+    @displayed_dogs = Dog.where(display_in_index: 1)
+    @q = @displayed_dogs.ransack(params[:q])
+    @dogs = @q.result(distinct: true).includes(:dog_size_type, :dog_country).order(created_at: :asc) 
   end
 
   def show
