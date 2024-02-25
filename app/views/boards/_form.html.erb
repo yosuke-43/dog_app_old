@@ -9,7 +9,7 @@
    </div>
    <div class="form-group">
      <%= f.label :dog_id, t('boards.new.what_breed') %>
-     <%= f.collection_select :dog_id, Dog.all, :id, :breed, { prompt: t('boards.new.what_breed_prompt') }, class: 'form-control' %>
+     <%= f.collection_select :dog_id, @dogs, :id, :breed, { prompt: t('boards.new.what_breed_prompt') }, class: 'form-control' %>
    </div>
   <div class="form-group">
     <%= f.label :board_image %>
