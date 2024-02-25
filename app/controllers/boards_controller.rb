@@ -3,6 +3,7 @@ class BoardsController < ApplicationController
 
   def new
     @board = Board.new
+    @dogs = Dog.order(breed: :asc)
   end
 
   def create
@@ -28,7 +29,9 @@ class BoardsController < ApplicationController
     @comments = @board.comments.includes(:user).order(created_at: :desc)
   end
 
-  def edit; end
+  def edit
+    @dogs = Dog.order(breed: :asc)
+  end
 
   def update
     if @board.update(board_params)

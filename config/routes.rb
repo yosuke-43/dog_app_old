@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   root 'static_pages#top'
   get 'test', to: 'static_pages#test'
   get 'merge', to: 'static_pages#top_merge'
+  get 'terms', to: 'static_pages#terms_of_service'
+  get 'privacy_policy', to: 'static_pages#privacy_policy'
 
   # 診断関係のルーティング
   get 'diagnoses/new'
