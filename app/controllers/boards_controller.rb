@@ -47,6 +47,12 @@ class BoardsController < ApplicationController
     redirect_to boards_path, success: t('defaults.message.deleted', item: Board.model_name.human)
   end
 
+  def bookmarks
+    @dog_breeds = Dog.pluck(:breed).uniq #pluckで:breedのカラムの値のみを配列で取得、重複はないけどuniqで取得。 
+    @q = current_user.bookmark_boards.ransack(params[:q])
+    @bookmark_boards = @q.result(distinct: true).includes(:user, :dog).order(created_at: :desc)
+  end
+
   private
 
   def set_board

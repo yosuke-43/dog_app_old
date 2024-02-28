@@ -2,7 +2,7 @@ ja:
   activerecord:
     models:
       user: 'ユーザー'
-      board: '掲示板'
+      board: '投稿'
       dog: 'わんちゃん'
       question: '質問'
       comment: 'コメント'

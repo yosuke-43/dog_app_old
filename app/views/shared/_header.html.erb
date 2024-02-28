@@ -27,8 +27,9 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#"></a></li>
-            <%= link_to '投稿一覧', boards_path, class: 'dropdown-item' %>
-            <%= link_to '投稿作成', new_board_path, class: 'dropdown-item' %>
+            <%= link_to t('boards.index.title'), boards_path, class: 'dropdown-item' %>
+            <%= link_to t('boards.bookmarks.title'), bookmarks_boards_path, class: 'dropdown-item' %>
+            <%= link_to t('boards.new.title'), new_board_path, class: 'dropdown-item' %>
           </ul>
         </li>
       </ul>

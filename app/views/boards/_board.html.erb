@@ -9,17 +9,11 @@
         <h6 class="card-title">
           <%= link_to board.dog.breed, dog_path(board.dog) %>
         </h6>
-        <%= render 'crud_menus', board: board if current_user.own?(board) %>
-        <ul class="list-inline">
-          <li class="list-inline-item">
-            <%= icon 'far', 'user' %>
-            <%= board.user.decorate.user_san %>
-          </li>
-          <li class="list-inline-item">
-            <%= icon 'far', 'calendar' %>
-            <%= l board.created_at, format: :long %>
-          </li>
-        </ul>
+        <% if current_user.own?(board) %>
+          <%= render 'crud_menus', board: board %>
+        <% else %>
+          <%= render 'bookmark_button', board: board %>
+        <% end %>
         <p class="card-text"><%= board.body %></p>
       </div>
     </div>
