@@ -30,7 +30,7 @@ ja:
       password_forget: 'パスワードをお忘れの方はこちら'
   boards:
     index:
-      title: '掲示板一覧'
+      title: '投稿一覧'
       no_board: '投稿はありません'
     new:
       title: '投稿作成'
@@ -38,12 +38,18 @@ ja:
       what_breed_prompt: '犬種を選択してください'
       post: '投稿する'
     bookmarks:
-      title: 'ブックマーク一覧'
+      title: 'いいね一覧'
+      no_result: 'いいね中の投稿があリません'
     show:
-      title: '掲示板詳細'
-      to_board_index: '掲示板一覧へ'
+      title: '投稿詳細'
+      to_board_index: '投稿一覧へ'
     edit:
-      title: '掲示板編集'
+      title: '投稿編集'
+  bookmarks:
+    create:
+      success: 'いいねしました'
+    destroy:
+      success: 'いいねを取り消しました'
   comments:
       form:
         comment_delete: 'コメント削除'

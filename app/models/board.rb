@@ -4,6 +4,7 @@ class Board < ApplicationRecord
   belongs_to :user
   belongs_to :dog
   has_many :comments, dependent: :destroy
+  has_many :bookmarks, dependent: :destroy
 
   #validation関係
   validates :title, presence: true, length: { maximum: 255 }
