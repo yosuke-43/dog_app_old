@@ -18,20 +18,22 @@
     </div>
   </td>
 
-  <% if current_user.own?(comment) %>
-    <td class="action">
-      <ul class="list-inline justify-content-center" style="float: right;">
-        <li class="list-inline-item">
-          <%= link_to comment_path(comment),
-                      class: 'js-delete-comment-button',
-                      method: :delete,
-                      data: { confirm: t('defaults.message.delete_confirm') },
-                      remote: true do %>
-            <%= icon 'fas', 'trash' %>
-            <%= t('comments.form.comment_delete') %>
-          <% end %>
-        </li>
-      </ul>
-    </td>
+  <% if logged_in? %>
+    <% if current_user.own?(comment) %>
+      <td class="action">
+        <ul class="list-inline justify-content-center" style="float: right;">
+          <li class="list-inline-item">
+            <%= link_to comment_path(comment),
+                        class: 'js-delete-comment-button',
+                        method: :delete,
+                        data: { confirm: t('defaults.message.delete_confirm') },
+                        remote: true do %>
+              <%= icon 'fas', 'trash' %>
+              <%= t('comments.form.comment_delete') %>
+            <% end %>
+          </li>
+        </ul>
+      </td>
+    <% end %>
   <% end %>
 </tr>
