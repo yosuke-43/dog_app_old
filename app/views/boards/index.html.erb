@@ -2,6 +2,16 @@
 <div class="container pt-3">
   <div class="row">
     <div class="col-lg-10 offset-lg-1 col-md-12">
+      <!-- 投稿作成誘導ボタン -->
+      <% if logged_in? %>
+        <div class="d-grid gap-2 mb-2">
+          <%= link_to t('boards.new.post'), new_board_path, class: "btn btn-outline-primary", role: "button" %>
+        </div>
+      <% else %>
+        <div class="d-grid gap-2 mb-2">
+          <%= link_to t('boards.new.before_login_post'), new_board_path, class: "btn btn-outline-primary", role: "button" %>
+        </div>
+      <% end %>
       <!-- 検索フォーム -->
       <%= content_tag(:div, class: 'mb-1') do %>
         <%= content_tag(:i, nil, class: 'fas fa-search', style: 'margin-right: 5px;') %> 投稿検索

@@ -9,10 +9,12 @@
         <h6 class="card-title">
           <%= link_to board.dog.breed, dog_path(board.dog) %>
         </h6>
-        <% if current_user.own?(board) %>
-          <%= render 'crud_menus', board: board %>
-        <% else %>
-          <%= render 'bookmark_button', board: board %>
+        <% if logged_in? %>
+          <% if current_user.own?(board) %>
+            <%= render 'crud_menus', board: board %>
+          <% else %>
+            <%= render 'bookmark_button', board: board %>
+          <% end %>
         <% end %>
         <p class="card-text"><%= board.body %></p>
       </div>

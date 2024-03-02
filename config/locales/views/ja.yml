@@ -37,6 +37,7 @@ ja:
       what_breed: '投稿する犬種'
       what_breed_prompt: '犬種を選択してください'
       post: '投稿する'
+      before_login_post: 'ログインして投稿する'
     bookmarks:
       title: 'いいね一覧'
       no_result: 'いいね中の投稿があリません'
