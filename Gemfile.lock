@@ -393,6 +393,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   jquery-rails
+  mini_magick
   pg (~> 1.5.5)
   pry-byebug
   puma (>= 5.0)
