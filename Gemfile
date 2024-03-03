@@ -91,5 +91,4 @@ gem 'carrierwave'
 gem 'rails-i18n'
 gem 'ransack'
 gem "dockerfile-rails", ">= 1.6", :group => :development
-
-
+gem 'mini_magick'

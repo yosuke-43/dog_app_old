@@ -1,22 +1,41 @@
-<div class="col-sm-12 col-lg-4 mb-3">
-  <div id="board-id-<%= board.id %>">
-    <div class="card">
-      <%= image_tag board.board_image_url, class: 'card-img-top', size: '200x200' %>
-      <div class="card-body">
-        <h4 class="card-title">
-          <%= link_to board.title, board_path(board)  %>
-        </h4>
-        <h6 class="card-title">
-          <%= link_to board.dog.breed, dog_path(board.dog) %>
-        </h6>
-        <% if logged_in? %>
-          <% if current_user.own?(board) %>
-            <%= render 'crud_menus', board: board %>
-          <% else %>
-            <%= render 'bookmark_button', board: board %>
-          <% end %>
+<div class="row mb-2">
+  <div class="col-md-12">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+      
+      <!-- 画像の列 -->
+      <div class="col-md-auto order-md-first">
+        <%= image_tag board.board_image_url, class: 'bd-placeholder-img', size: '200x200' %>
+      </div>
+      
+      <!-- 情報の列 -->
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-0 text-primary-emphasis">
+          <%= board.user.decorate.user_san %>
+        </strong>
+        <strong class="d-inline-block mb-0 text-primary-emphasis">
+          <%= "#{t('activerecord.attributes.board.created_at')}：#{l board.created_at, format: :long}" %>
+        </strong>
+        
+        <h2 class="mb-2"><%= link_to board.title, board_path(board)  %></h2>
+        
+        <!-- ドッグ情報 -->
+        <%= link_to dog_path(board.dog), class: "d-flex align-items-center text-decoration-none" do %>
+          <i class="fa-solid fa-dog me-2 text-primary" style="font-size: 1.3em;"></i>
+          <div>
+            <h6 class="card-text mb-auto"><%= board.dog.breed %></h6>
+          </div>
         <% end %>
-        <p class="card-text"><%= board.body %></p>
+
+        <!-- ログインユーザーにのみ表示されるメニュー -->
+        <div class="mt-2">
+          <% if logged_in? %>
+            <% if current_user.own?(board) %>
+              <%= render 'crud_menus', board: board %>
+            <% else %>
+              <%= render 'bookmark_button', board: board %>
+            <% end %>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>
