@@ -38,4 +38,7 @@
 /config/master.key
 
 # 追加で記入
-db_to_production/*
+/db_to_production/*
+/vendor/*
+/decorators/*
+/db/development.sqlite3
