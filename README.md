@@ -66,3 +66,4 @@ figma_url:https://www.figma.com/file/7tf55nXVjqWd7XlB2jAQX2/%E7%84%A1%E9%A1%8C?t
 
 ## ER図
 drawio:https://app.diagrams.net/#G1-IEPgIJQMxr5a0cwg7LNig-jck58PzOW#%7B%22pageId%22%3A%22R2lEEEUBdFMjLlhIrx00%22%7D
+[![Image from Gyazo](https://i.gyazo.com/d57710d74fefce8a6af0f78de85da1d6.png)](https://gyazo.com/d57710d74fefce8a6af0f78de85da1d6)
