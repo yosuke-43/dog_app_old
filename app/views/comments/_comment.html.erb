@@ -11,11 +11,6 @@
       <%= t('activerecord.attributes.comment.created_at') %>
       <%= l comment.created_at, format: :long %>
     </div>
-    <div id="js-textarea-comment-box-<%= comment.id %>" style="display: none;">
-      <textarea id="js-textarea-comment-<%= comment.id %>" class="form-control mb-1"><%= comment.body %></textarea>
-      <button class="btn btn-light js-button-edit-comment-cancel" data-comment-id="<%= comment.id %>">キャンセル</button>
-      <button class="btn btn-success js-button-comment-update" data-comment-id="<%= comment.id %>">更新</button>
-    </div>
   </td>
 
   <% if logged_in? %>
@@ -26,8 +21,7 @@
             <%= link_to comment_path(comment),
                         class: 'js-delete-comment-button',
                         method: :delete,
-                        data: { confirm: t('defaults.message.delete_confirm') },
-                        remote: true do %>
+                        data: { confirm: t('defaults.message.delete_confirm') } do %>
               <%= icon 'fas', 'trash' %>
               <%= t('comments.form.comment_delete') %>
             <% end %>
