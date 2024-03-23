@@ -1,86 +1,128 @@
-# アプリ名：Tail Tales
+# This file is auto-generated from the current state of the database. Instead
+# of editing this file, please use the migrations feature of Active Record to
+# incrementally modify your database, and then regenerate this schema definition.
+#
+# This file is the source Rails uses to define your schema when running `bin/rails
+# db:schema:load`. When creating a new database, `bin/rails db:schema:load` tends to
+# be faster and is potentially less error prone than running all of your
+# migrations from scratch. Old migrations may fail to apply correctly if those
+# migrations use external dependencies or application code.
+#
+# It's strongly recommended that you check this file into your version control system.
 
-## サービス概要
-このアプリは2つのメインサービスで構成されています。
+ActiveRecord::Schema[7.1].define(version: 2024_02_28_145705) do
+  create_table "answers", force: :cascade do |t|
+    t.text "content"
+    t.integer "question_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.text "explain"
+    t.index ["question_id"], name: "index_answers_on_question_id"
+  end
 
-**1つ目**
-犬を飼いたいけど自分に合う犬種がわからない、そういった悩みを持ったユーザーにどんな犬種が向いているか簡単に診断します。
-また、犬種情報画面や実際に飼っている人の投稿から詳しく知ることができる情報提供サービスです。
-**2つ目**
-自身の犬の投稿をして、コメントやいいね機能をもらうことができるサービスになります。
+  create_table "boards", force: :cascade do |t|
+    t.string "title", null: false
+    t.text "body", null: false
+    t.integer "user_id", null: false
+    t.integer "dog_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "board_image"
+    t.index ["dog_id"], name: "index_boards_on_dog_id"
+    t.index ["user_id"], name: "index_boards_on_user_id"
+  end
 
-そこでこのサービスのタイプは、診断,CGM,レビューサービスなどが合わさったようなサービスになります。
+  create_table "bookmarks", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.integer "board_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["board_id"], name: "index_bookmarks_on_board_id"
+    t.index ["user_id", "board_id"], name: "index_bookmarks_on_user_id_and_board_id", unique: true
+    t.index ["user_id"], name: "index_bookmarks_on_user_id"
+  end
 
+  create_table "comments", force: :cascade do |t|
+    t.text "body", null: false
+    t.integer "user_id", null: false
+    t.integer "board_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["board_id"], name: "index_comments_on_board_id"
+    t.index ["user_id"], name: "index_comments_on_user_id"
+  end
 
-## 想定されるユーザー層
-初めて犬を飼おうと検討している人
-自分の犬を多くの人に見てもらいたい人
+  create_table "dog_answer_rerationships", force: :cascade do |t|
+    t.integer "dog_id", null: false
+    t.integer "answer_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["answer_id"], name: "index_dog_answer_rerationships_on_answer_id"
+    t.index ["dog_id", "answer_id"], name: "index_dog_answer_rerationships_on_dog_id_and_answer_id", unique: true
+    t.index ["dog_id"], name: "index_dog_answer_rerationships_on_dog_id"
+  end
 
+  create_table "dog_countries", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
-## サービスコンセプト
-#### ユーザーが抱えている課題感と提供するサービスでどのように解決するのか
-###### 初めて犬を飼おうと検討している人に対してのサービス
-初めて犬を飼おうとする人は犬に対しての知識が少なく、自分の環境に合った犬種を探すということが大変なことが多いです。
-そこで、簡単に自分に合った犬種を発見し、より深くその犬種について知ることができるサービスを考案しました。
+  create_table "dog_size_types", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
-###### 自分の犬を多くの人に見てもらいたい人に対してのサービス
-自分の犬を褒めてもらい、それが今からその犬種を飼おうと検討している人の役に立つことができるサービスを考案しました。
+  create_table "dogs", force: :cascade do |t|
+    t.string "breed", null: false
+    t.string "height"
+    t.string "weight"
+    t.integer "hair_length"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "dog_size_type_id", null: false
+    t.string "dog_image"
+    t.integer "dog_country_id"
+    t.integer "activity_level"
+    t.integer "solitude_tolerance"
+    t.integer "care_difficulty"
+    t.text "catchphrase"
+    t.text "features_sentence"
+    t.text "personality_sentence"
+    t.text "history_sentence"
+    t.text "recommended_for_whom"
+    t.integer "display_in_index", default: 0
+    t.index ["dog_country_id"], name: "index_dogs_on_dog_country_id"
+    t.index ["dog_size_type_id"], name: "index_dogs_on_dog_size_type_id"
+  end
 
-#### なぜそのサービスを作ろうと思ったのか
-自分自身が犬を飼おうと検討しているが、現在あるサービスでは自身の家庭環境やお金やアレルギーなど細かな診断ができるものがなかった。
-また実際に飼っている人からの情報を聞けたら、さらに犬種のイメージがつくと考えたためです。
+  create_table "questions", force: :cascade do |t|
+    t.string "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
-#### どのようなサービスにしていきたいか
-Tail Talesでは、どんな犬種がいるのかについて全く知らない人でも
-自分の今の生活に犬が加わるイメージがつくようなサービスにしたいと考えています。
-また実際に飼い始めたら今度は情報を提供する側に回ってくれて、このサービス自体が循環してくれるようにしたいと考えています。
+  create_table "users", force: :cascade do |t|
+    t.string "email", null: false
+    t.string "crypted_password"
+    t.string "salt"
+    t.string "name"
+    t.datetime "birthday"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
+  end
 
-#### どこが売りになるか、差別化ポイントになるか
-プラットフォーム側が準備した犬種の情報に加えて、すでにその犬種を飼っている人からの情報が容易に手に入れることができる。
-犬種毎にコミュニティができるので、珍しい犬種でも実際に飼っている人から情報が得ることができる
-
-# サービスの利用イメージ
-**診断機能から投稿まで**
-1.ユーザーが診断ボタンを押下して、10個ほどの簡単な質問に答えます。
-2.診断結果として、ユーザーの回答にマッチした犬種が(1種類以上)表示されます。
-3.ユーザーはマッチした犬種の詳細を閲覧することができます。
-4.さらに他のユーザーのその犬種についての投稿を見ることができます。
-5.投稿についていいねやコメントを残したり、いいねした投稿はリストにまとめられます。
-
-
-## 実装を予定している機能
-### MVP
-* 会員登録
-* ログイン
-* 診断機能
-* 犬種一覧機能
-* 投稿閲覧機能
-
-### 本リリース
-* 投稿に対してのいいね機能
-* 投稿に対してのコメント機能
-* 投稿の作成機能
-* いいね数の表示
-* コメント機能
-
-### 実装予定の高度な機能
-* マルチ検索
-
-## 機能の実装情報
-### 【バックエンド】
-* Ruby on Rails 7.1.1
-* Ruby 3.0.2
-
-### 【フロントエンド】
-* JavaScript
-* bootstrap
-
-### 【インフラ】
-* Heroku
-
-##　画面遷移図
-figma_url:https://www.figma.com/file/7tf55nXVjqWd7XlB2jAQX2/%E7%84%A1%E9%A1%8C?type=design&node-id=3%3A609&mode=design&t=JYLF7iGQJwj9lIre-1
-
-## ER図
-drawio:https://app.diagrams.net/#G1-IEPgIJQMxr5a0cwg7LNig-jck58PzOW#%7B%22pageId%22%3A%22R2lEEEUBdFMjLlhIrx00%22%7D
-[![Image from Gyazo](https://i.gyazo.com/d57710d74fefce8a6af0f78de85da1d6.png)](https://gyazo.com/d57710d74fefce8a6af0f78de85da1d6)
+  add_foreign_key "answers", "questions"
+  add_foreign_key "boards", "dogs"
+  add_foreign_key "boards", "users"
+  add_foreign_key "bookmarks", "boards"
+  add_foreign_key "bookmarks", "users"
+  add_foreign_key "comments", "boards"
+  add_foreign_key "comments", "users"
+  add_foreign_key "dog_answer_rerationships", "answers"
+  add_foreign_key "dog_answer_rerationships", "dogs"
+  add_foreign_key "dogs", "dog_countries"
+  add_foreign_key "dogs", "dog_size_types"
+end
