@@ -1,16 +1,16 @@
 <%= form_with model: board, local: true do |f| %>
-   <div class="form-group">
-     <%= f.label :title %>
-     <%= f.text_field :title, class: 'form-control' %>
-   </div>
-   <div class="form-group">
-     <%= f.label :body %>
-     <%= f.text_area :body, class: 'form-control', rows: 10 %>
-   </div>
-   <div class="form-group">
-     <%= f.label :dog_id, t('boards.new.what_breed') %>
-     <%= f.collection_select :dog_id, @dogs, :id, :breed, { prompt: t('boards.new.what_breed_prompt') }, class: 'form-control' %>
-   </div>
+    <div class="form-group">
+      <%= f.label :title %>
+      <%= f.text_field :title, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :body %>
+      <%= f.text_area :body, class: 'form-control', rows: 10 %>
+    </div>
+    <div class="form-group">
+      <%= f.label :dog_id, t('boards.new.what_breed') %>
+      <%= f.collection_select :dog_id, @dogs, :id, :breed, { prompt: t('boards.new.what_breed_prompt') }, class: 'form-control' %>
+    </div>
   <div class="form-group">
     <%= f.label :board_image %>
     <%= f.file_field :board_image, id: 'board_board_image', class: 'form-control mb-3', accept: 'image/*' %>
